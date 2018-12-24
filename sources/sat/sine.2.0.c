@@ -8,7 +8,7 @@ extern void __VERIFIER_assume(int);
 /*@ requires IN > -1.57079632679f && IN < 1.57079632679f; 
   @ ensures true; 
   @*/
-void main()
+int main()
 {
 	float IN = nondet_float();
 	__VERIFIER_assume(IN > -1.57079632679f && IN < 1.57079632679f);
