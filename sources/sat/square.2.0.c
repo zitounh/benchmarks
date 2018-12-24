@@ -5,7 +5,7 @@
 
 extern void __VERIFIER_assume(int);
 
-void main()
+int main()
 {
 	float IN = nondet_float();
 	__VERIFIER_assume(IN >= 0.0f && IN < 1.0f);
