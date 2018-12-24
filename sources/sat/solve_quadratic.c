@@ -5,7 +5,7 @@
 
 extern void __VERIFIER_assume(int);
 
-void main()
+int main()
 {
 
   float a = nondet_float();
