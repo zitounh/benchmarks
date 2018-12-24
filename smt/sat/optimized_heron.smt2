@@ -1,3 +1,4 @@
+(set-logic QF_FP)
 (declare-fun __ESBMC_ptr_obj_start_0 () (_ BitVec 32))
 (declare-fun __ESBMC_ptr_obj_end_0 () (_ BitVec 32))
 (declare-fun __ESBMC_ptr_obj_start_1 () (_ BitVec 32))
@@ -45,7 +46,7 @@
              (_ FloatingPoint 8 24))
 (declare-fun |optimized_heron::main::4::aire@1!0&0#2| () (_ FloatingPoint 8 24))
 (declare-fun |goto_symex::guard@0!0&0#1| () Bool)
-(declare-fun |execution_statet::\\guard_exec@0!0| () Bool)
+(declare-fun |execution_statet::guard_exec@0!0| () Bool)
 (assert (= __ESBMC_ptr_obj_start_0 #x00000000))
 (assert (= __ESBMC_ptr_obj_end_0 #x00000000))
 (assert (= __ESBMC_ptr_obj_start_1 #x00000001))
@@ -187,6 +188,6 @@
                 (not a!6)
                 a!7
                 a!8)
-           (=> |execution_statet::\\guard_exec@0!0| |goto_symex::guard@0!0&0#1|)))))
+           (=> |execution_statet::guard_exec@0!0| |goto_symex::guard@0!0&0#1|)))))
 
 (check-sat)

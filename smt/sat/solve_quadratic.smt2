@@ -1,3 +1,4 @@
+(set-logic QF_FP)
 (declare-fun __ESBMC_ptr_obj_start_0 () (_ BitVec 32))
 (declare-fun __ESBMC_ptr_obj_end_0 () (_ BitVec 32))
 (declare-fun __ESBMC_ptr_obj_start_1 () (_ BitVec 32))
@@ -33,7 +34,7 @@
 (declare-fun |nondet$symex::nondet1| () (_ FloatingPoint 8 24))
 (declare-fun |solve_quadratic::main::2::b@1!0&0#1| () (_ FloatingPoint 8 24))
 (declare-fun |goto_symex::guard@0!0&0#1| () Bool)
-(declare-fun |execution_statet::\\guard_exec@0!0| () Bool)
+(declare-fun |execution_statet::guard_exec@0!0| () Bool)
 (assert (= __ESBMC_ptr_obj_start_0 #x00000000))
 (assert (= __ESBMC_ptr_obj_end_0 #x00000000))
 (assert (= __ESBMC_ptr_obj_start_1 #x00000001))
@@ -88,6 +89,6 @@
                             (fp #b0 #x00 #b00000000000000000000000))))))
   (= a!1 |goto_symex::guard@0!0&0#1|)))
 (assert (not (=> true
-         (=> |execution_statet::\\guard_exec@0!0| |goto_symex::guard@0!0&0#1|))))
+         (=> |execution_statet::guard_exec@0!0| |goto_symex::guard@0!0&0#1|))))
 
 (check-sat)

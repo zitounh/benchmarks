@@ -1,3 +1,4 @@
+(set-logic QF_FP)
 (declare-fun __ESBMC_ptr_obj_start_0 () (_ BitVec 32))
 (declare-fun __ESBMC_ptr_obj_end_0 () (_ BitVec 32))
 (declare-fun __ESBMC_ptr_obj_start_1 () (_ BitVec 32))
@@ -22,7 +23,7 @@
 (declare-fun |smt_conv::smt_conv::collate_array_vals::7..start0|
              ()
              (_ BitVec 32))
-(declare-fun |execution_statet::\\guard_exec@0!0| () Bool)
+(declare-fun |execution_statet::guard_exec@0!0| () Bool)
 (assert (= __ESBMC_ptr_obj_start_0 #x00000000))
 (assert (= __ESBMC_ptr_obj_end_0 #x00000000))
 (assert (= __ESBMC_ptr_obj_start_1 #x00000001))
@@ -65,6 +66,6 @@
 (assert (and (= #x00000000 #x00000000) (= #x00000000 #x00000000)))
 (assert (and (= #x00000000 #x00000000) (= #x00000000 #x00000000)))
 (assert (and (= #x00000001 #x00000001) (= #x00000000 #x00000000)))
-(assert (not (=> true (not |execution_statet::\\guard_exec@0!0|))))
+(assert (not (=> true (not |execution_statet::guard_exec@0!0|))))
 
 (check-sat)

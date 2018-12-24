@@ -1,3 +1,4 @@
+(set-logic QF_FP)
 (declare-fun __ESBMC_ptr_obj_start_0 () (_ BitVec 32))
 (declare-fun __ESBMC_ptr_obj_end_0 () (_ BitVec 32))
 (declare-fun __ESBMC_ptr_obj_start_1 () (_ BitVec 32))
@@ -166,7 +167,7 @@
              (_ FloatingPoint 8 24))
 (declare-fun |pid_diff_10::main::2::diff@1!0&0#2| () (_ FloatingPoint 8 24))
 (declare-fun |goto_symex::guard@0!0&0#1| () Bool)
-(declare-fun |execution_statet::\\guard_exec@0!0| () Bool)
+(declare-fun |execution_statet::guard_exec@0!0| () Bool)
 (assert (= __ESBMC_ptr_obj_start_0 #x00000000))
 (assert (= __ESBMC_ptr_obj_end_0 #x00000000))
 (assert (= __ESBMC_ptr_obj_start_1 #x00000001))
@@ -1155,7 +1156,7 @@
                 #x00000001
                 #x00000000)))
 (let ((a!2 (=> (and true (not (= a!1 #x00000000)))
-               (=> |execution_statet::\\guard_exec@0!0|
+               (=> |execution_statet::guard_exec@0!0|
                    |goto_symex::guard@0!0&0#1|))))
   (not a!2))))
 
