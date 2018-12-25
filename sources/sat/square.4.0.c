@@ -17,8 +17,7 @@ int main()
   result = 1.0f + 0.5f*IN - 0.125f*IN*IN + 0.0625f*IN*IN*IN 
     - 0.0390625f*IN*IN*IN*IN;
 
-   assert(result >= 0.0f);
-   assert(result < 1.39844f);
+   assert(result < 0.0f || result >= 1.39844f);
 
   return 0;
 }
