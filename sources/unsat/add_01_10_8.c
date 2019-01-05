@@ -25,9 +25,9 @@ void checkAdditiveAssociativityBound (float a, float b, float c, float delta, fl
 
 
   /* Check the bounding of inputs */
-  __VERIFIER_assume((diffab <= delta) &&
-                   (diffac <= delta) &&
-                   (diffbc <= delta));
+//  __VERIFIER_assume((diffab <= delta) &&
+//                   (diffac <= delta) &&
+//                   (diffbc <= delta));
   
   assoc1 = ((a + b) + c);
   assoc2 = (a + (b + c));
