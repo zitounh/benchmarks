@@ -53,5 +53,5 @@ int main()
     __VERIFIER_assume(b > -1000000.0 && b < 1000000.0);
     __VERIFIER_assume(c > -1000000.0 && c < 1000000.0);
     
-    checkAdditiveAssociativityBound(a,b,c,5,10);    
+    checkAdditiveAssociativityBound(a,b,c,50,10);    
 }
