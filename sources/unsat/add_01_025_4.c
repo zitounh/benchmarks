@@ -32,19 +32,19 @@ void checkAdditiveAssociativityBound (float a, float b, float c, float delta, fl
   assoc1 = ((a + b) + c);
   assoc2 = (a + (b + c));
 
-
+  
     /* May not be able to subtract infinities */
   __VERIFIER_assume(assoc1 != INFINITY && assoc1 != -INFINITY);
   __VERIFIER_assume(assoc2 != INFINITY && assoc2 != -INFINITY);
 
   assert(assoc1 - assoc2 <= epsilon);
-  
+ 
 }
 
 
 int main()
 {
-   
+    
     float a = nondet_float();
     float b = nondet_float();
     float c = nondet_float();
@@ -53,5 +53,5 @@ int main()
     __VERIFIER_assume(b > -1000000.0 && b < 1000000.0);
     __VERIFIER_assume(c > -1000000.0 && c < 1000000.0);
     
-    checkAdditiveAssociativityBound(a,b,c,0.1,10);    
+    checkAdditiveAssociativityBound(a,b,c,0.1,0.25);    
 }
