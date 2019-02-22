@@ -4,7 +4,7 @@
 #include <assert.h>
 
 extern void __VERIFIER_assume(int);
-#define NBLOOPS 1
+#define NBLOOPS 2
 
 float runge_kutta(float y0){
    float k = 1.2f;
