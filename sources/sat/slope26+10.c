@@ -10,6 +10,7 @@ int main()
 	
 	float x0 = 13.0f;
 	float h = nondet_float();
+   __VERIFIER_assume( h>=1e-9f && h<= 1e-6f);
 	float x1 = x0 + h;
 	float x2 = x0 - h;
 	float fx1 = x1 * x1;
